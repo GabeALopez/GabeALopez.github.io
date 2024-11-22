@@ -4,7 +4,7 @@ date: 2024-11-17
 #image: "/regPando.jpg"
 lastmod: 2024-11-17
 showTableOfContents: false
-tags: ["Cybersecurity"]
+tags: ["Cybersecurity", "History"]
 title: "The Eternalblue Story"
 type: "post"
 ---
