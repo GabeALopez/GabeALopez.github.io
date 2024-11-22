@@ -7,7 +7,7 @@ languageCode = "en"
 pygmentsStyle = "monokai"
 theme = "gokarna"
 title = "Gabriel Lopez"
-publishdir = 'docs'
+publishDir = 'docs'
 
 [params]
   avatarAltText = "avatar"
