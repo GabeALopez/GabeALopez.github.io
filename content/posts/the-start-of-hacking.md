@@ -35,6 +35,17 @@ Another instance of hacking a cipher in more recent time comparatively can be fo
 
 ## More Modern Times
 
+Catching up to the 1960's, one of the first more modern hacking attempts were conducted. This was the era of phreaking. It was found, by a man named Joe Engressia, that he could gain access to the phone systems by playing a specific pitch of sound. Eventually a tool was created to automatically exploit the issue of the phone systems by creating the specific tones. Not only this, this exploit was eventually used to created access areas where only certain knew how to access. This became to be the precursor to chat rooms and forums along with start of the dark web[^4].
+
+As time went on, the technique on how to do phreaking was published in an article and many people tried to do phreaking themselves. The amount of people that were trying to do this escalated to quickly that possession of the blue boxes, that automatically exploited the phone system, became illegal and could land you time in jail. 
+
+But getting closer to our current time, hacking has become an act of criminal activity by many threat actors in the world. Hacking has now become synonymous with the criminal world and now has unfortunately changed to something that is looked down upon. In past in the 60's through to the 90's, hacking was something that was done for the sake of the game rather than how much money can be made out of it. For example, people have found ways to hack the original Atari to display graphics it was never meant to show for a console like. But with some ingenuity, people were able to find an exploit in it's code and show something that could never be thought imagined on such an old console. 
+
+## Conclusion 
+
+The origins of hacking really start with exploitation and circumvention of the law through government loop holes and perverse incentives. Even before, that hacking was already occurring in cracking the cryptography of the past to gain intelligence on the enemy and create plans around it. Moving closer to modern times in the 60's, early forms of traditional hacking as we know it stem from the act of phreaking where the start of the dark web and forums took place. But in more modern times, hacking is seen as something that is always malicious but if you look beyond the surface hacking is more than just a criminal getting a quick payday. It can be something that is more beautiful and entertaining for everyone. 
+
 [^1]: https://www.history.com/news/the-whiskey-ring-and-americas-first-special-prosecutor
 [^2]: https://www.atlasobscura.com/articles/hanoi-rat-massacre-1902
 [^3]: https://www.historytools.org/inventions/the-complete-history-of-the-enigma-machine
+[^4]: https://www.gradschools.com/degree-guide/evolution-of-computer-hacking
