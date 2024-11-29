@@ -40,7 +40,8 @@ publishDir = 'docs'
   showBackToTopButton = true # true or false for "back to top" button on posts and pages
 
   socialIcons = [
-    {name = "email", url = "gabriel.andres.lopez03@gmail.com"}
+    {name = "email", url = "mailto:gabriel.andres.lopez03@gmail.com"},
+    {name = "linkedin", url = "https://linkedin.com/in/gabriel-lopez-28544222a"}
   ]
 
 [menu]
@@ -71,7 +72,7 @@ publishDir = 'docs'
   [[menu.main]]
     identifier = "github"
     pre = "<span data-feather='github'></span>"
-    url = "https://github.com/gokarna-theme/gokarna-hugo"
+    url = "https://github.com/GabeALopez"
     weight = 5
 
   [[menu.main]]
