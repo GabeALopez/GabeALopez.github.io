@@ -14,6 +14,12 @@ type: page
 
 ---
 
+## Data Analysis
+
+- [Cybersecurity Salaries Around the World](/projects/data-analysis/salaries)
+
+---
+
 ## Class Projects
 
 ### Object Oriented Programming:
