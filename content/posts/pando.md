@@ -25,8 +25,6 @@ The interesting thing about it to is that is that it reproduces asexually so eve
 
 Here is a diagram from the park of what this looks like:
 
-*insert image here*
-
 ![diagram pando](/nature/pando/diagramPando.jpg)
 
 The tree has actually been around for years and spans quite a distance. 
