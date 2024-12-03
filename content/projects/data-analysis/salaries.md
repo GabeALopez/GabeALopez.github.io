@@ -3,7 +3,7 @@ date: 2024-11-29
 lastmod: 2024-11-17
 showTableOfContents: false
 tags: ["Cybersecurity", "Data Analysis"]
-title: "Salaries"
+title: "Salaries (WIP)"
 type: "post"
 ---
 
