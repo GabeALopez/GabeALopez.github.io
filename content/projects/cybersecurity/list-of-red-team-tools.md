@@ -38,6 +38,7 @@ type: "post"
 - SMB Client - A local linux tool to use SMB shares
 - Enum4linux - Automation tool to enumeration tool
   - **NOTE:** In actual pentests it is advised to not really use this tool as it creates too much noise for the client
+- NetExec - Another post exploitation tool for when you have credentials for an SMB server
 
 ## Active Directory
 
