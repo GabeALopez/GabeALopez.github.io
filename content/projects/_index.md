@@ -23,7 +23,16 @@ type: page
 
 ## Class Projects
 
+### Intro to Unix
+
+[Lark Project](/projects/intro-to-unix/lark-project)
+
 ### Object Oriented Programming:
+
+[]()
+[]()
+[]()
+
 
 ### Data Structures:
 
@@ -35,3 +44,4 @@ type: page
 
 ### Computer Security:
 
+### System Administration Using Unix
