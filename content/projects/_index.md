@@ -9,6 +9,7 @@ type: page
 
 ## Cybersecurity
 
+- [Resources](projects/cybersecurity/resources)
 - [List of Red Team Tools](/projects/cybersecurity/list-of-red-team-tools)
 - [HTB Pentest Checklist/Playbook](/projects/cybersecurity/htb-pentesting-checklist-and-playbook)
 - [CTF Writeups](/projects/cybersecurity/ctf-writeups)
