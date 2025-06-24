@@ -6,4 +6,14 @@ tags: ["Cybersecurity", "resources"]
 type: "post"
 ---
 
-# Test
+# Red Team
+
+## Pentesting
+
+## Malware Development
+
+# Blue Team
+
+## Reversing
+
+## Forensics
