@@ -12,7 +12,7 @@ There are CTFs here that I have done and have written on a repo I have on GITHUB
 
 ## 247 CTFs
 
-### From GITHUB
+### **From GITHUB**
 
 [Compare-The-Pair](https://github.com/GabeALopez/CTF-Writeups/blob/main/247CTF/Compare-The-Pair.md)
 
@@ -22,7 +22,7 @@ There are CTFs here that I have done and have written on a repo I have on GITHUB
 
 ## HTB CTFS
 
-### From GITHUB
+### **From GITHUB**
 
 #### *Web Challenges*
 
