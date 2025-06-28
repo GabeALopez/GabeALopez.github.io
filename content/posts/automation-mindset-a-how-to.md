@@ -21,7 +21,7 @@ Anyway, in today’s digital world, automation means using technology to handle 
 
 What’s that? You want a *human* explanation now? *Sigh.* The things I do to keep you people happy…
 
-So why does automation matter? Because doing the same boring tasks over and over sucks. Plain and simple. On a more professional note, it also reduces errors, saves time, and lets you focus on work that actually requires thinking.
+Why does automation matter? Because doing the same boring tasks over and over sucks. It’s that simple. On a more professional note, it also reduces errors, saves time, and lets you focus on work that actually requires thinking.
 
 ---
 
@@ -89,7 +89,72 @@ Both required scripting—usually in Python or PowerShell. And no, you don’t n
 
 # A Quick Detour: APIs vs Web Scraping
 
-\<INSERT LINK TO SECTION\>
+As mentioned earlier, this section is about APIs and web scraping.
+
+Starting with APIs—what are they?
+
+The acronym stands for **Application Programming Interface**, and the idea behind APIs is that they give programmers and scripters a clean, consistent way to interact with software.
+
+APIs typically return a nicely formatted version of the data you're looking for. However, not all APIs are made equally, so be sure to read the documentation of the specific API you're trying to use with your scripts or programs.
+
+APIs are one of my favorite things about automation because of how powerful and well-structured they can be. Once you start looking for them, you start to see APIs *everywhere*.
+
+Hell, even the Windows operating system has an API for developers (and malware devs) to interact with. But I digress.
+
+The key thing to remember is this: APIs don’t just let you **get** data—they also let you **send** data.
+
+If you’re following where this is going, you’ll realize you can automate far more than just reading information—you can automate entire actions by pushing data back to the system.
+
+From there, the sky's the limit.
+
+Now, I unfortunately can't tell you how to interact with every API, but the general approach is this:
+
+- You send a **web request** to a **web endpoint**
+- You include your **API key** for authentication
+
+You usually register for an API key through the application you’re trying to access. Then, send web requests to the documented endpoints. Most API documentation includes examples of basic requests—so read the docs carefully and experiment with a few endpoints to get comfortable.
+
+---
+
+On the other side of the coin, you have **web scraping**.
+
+Sometimes, you won’t have a nice API to work with. During my internship, I didn’t have a proper API endpoint available in the typical way.
+
+Instead, I had to read **raw HTML** from websites and transform it into structured data.
+
+But be clear—the data you're looking for usually won’t be in the static source page when you right-click and "View Source."
+
+No, the real gold is in the **web requests** your browser sends to the server when you interact with a site.
+
+A good example of this is LinkedIn.
+
+LinkedIn *has* an API, but the community/free edition doesn’t give you access to much. I didn’t want to pay for access or go through the process of verifying a business, so I had to get creative and watch the web requests.
+
+When I started thinking about automating my job search after my internship, I noticed that the job listings must be getting requested somehow behind the scenes.
+
+So I opened **Inspect Element** in Firefox, clicked the button that loads the next page of job listings, and watched the **Network tab**.
+
+There, I could see the requests my browser was sending to the LinkedIn servers. I found the specific one that fetched the next page of results—and guess what? I could replicate that request myself and get the same data.
+
+From there, I studied the request and figured out how my browser was sending it—what headers, parameters, and cookies it used. Then I realized it was just hitting a particular endpoint.
+
+All I had to do was:
+
+1. Send the request myself
+2. Authenticate using my browser cookie
+3. Parse the returned **JSON** data
+4. Extract the info I wanted
+
+That, in essence, is **web scraping**.
+
+It’s about understanding how your browser is interacting with a site, mimicking those requests, and extracting the data from the responses.
+
+---
+
+Between the two, I prefer **APIs**—they're cleaner, more stable, and meant to be used. But if a vendor doesn’t provide one, then you have to make do and scrape.
+
+That’s just how it is. That’s life—sometimes you just have to make do with what you’ve got.
+
 
 ---
 
@@ -110,6 +175,8 @@ In my internship, I ended up using an unofficial method. I didn’t have an API 
 If you haven’t caught the theme yet:  
 **If something is repetitive and consistent, you can probably automate it.**
 
-Start noticing the time-sucking tasks in your day. The stuff that makes you roll your eyes. Then ask yourself how a script could take that load off your plate.
+Start noticing the time-sucking tasks in your day. The stuff that makes you want to quit because it is so repetitive. Then ask yourself how a script could take that load off your plate.
 
 Even if you’re not a coder (yet), just understanding how APIs and web scraping work will set you up for success. Learn to see the patterns—and the pain points—and automation will naturally follow.
+
+Want to see how I actually wrote the script? I’ll be making a follow-up post that dives into the technical side.
