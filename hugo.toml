@@ -13,6 +13,7 @@ publishDir = 'docs'
   avatarAltText = "avatar"
   avatarSize = "size-m"
   avatarURL = "/cyberduck"
+  dateFormat = "2006-01-02"
 
   customHeadHTML = """
     <!-- KaTeX -->
