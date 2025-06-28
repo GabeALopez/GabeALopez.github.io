@@ -2,7 +2,7 @@
 date: 2025-06-26
 # description: ""
 # image: ""
-lastmod: 2025-06-27
+lastmod: 2025-06-28
 showTableOfContents: false
 tags: ["Cybersecurity", "History"]
 title: "Automation Mindset - A How To"
