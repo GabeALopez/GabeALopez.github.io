@@ -72,6 +72,11 @@ type: "post"
 
 ## Binary Exploitation
 
+
+### Tools
+
+- pwn-dbg - [Documentation](https://pwndbg.re/pwndbg/latest/features/)
+
 ### Topics to Think About
 
 - Types of vulns

@@ -44,3 +44,8 @@ type: "post"
 
 - Blood Hound - A nice enumeration tool when you have an initial shell on a windows machine
   - This tools helps to produce a json file to import into the Blood Hound website so you can find a connection from your current user account to a domain admin
+
+
+## Binary Exploitation
+
+Pwndbg - A tool used to debug what a program is doing step by step in the assembly
