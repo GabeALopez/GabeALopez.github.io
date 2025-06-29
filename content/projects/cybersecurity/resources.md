@@ -72,6 +72,23 @@ type: "post"
 
 ## Binary Exploitation
 
+### General
+
+[CryptoCat - Intro to Binary Exploitation](https://youtu.be/wa3sMSdLyHw?si=976kuK3W4SygRRWR)
+
+**Description:** This is a series by CryptoCat that will teach you how to do binary exploitation challenges. Pretty useful
+
+[Cybersecurity Notes - ir0nstone](https://ir0nstone.gitbook.io/notes/binexp/stack)
+
+**Description:** This is a set of notes I pulled from the Binary Exploitation series that CryptoCat had linked. It's got some good notes regarding binary exploitation. It has other notes but it seems that binary exploitation is the main focus here. 
+
+[Format Strings 101 - Alexandre CHERON](https://axcheron.github.io/exploit-101-format-strings/)
+
+**Description:** This is another article I pulled from the CryptoCat's sources in his Binary Exploitation series. Is a little somewhat confusing so I would look through the binary exploitation video in the series for overwriting the global offset table
+
+[GOT and PLT for pwning - System Overload](https://systemoverlord.com/2017/03/19/got-and-plt-for-pwning.html)
+
+**Description:** Explains the global offset table for pwn challenges.
 
 ### Tools
 
