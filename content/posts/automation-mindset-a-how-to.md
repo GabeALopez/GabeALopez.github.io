@@ -13,7 +13,7 @@ type: "post"
 
 **Welcome! Welcome!** Traveler, I see you’ve come to hear the tale of automation’s greatness. Excellent choice. Shall we begin?
 
-So… what *is* automation? I know, I know—you didn’t come here for a history lesson. Neither did I. But a little context helps, so don’t click away just yet. You hear me?
+So… what *is* automation? I know, I know-you didn’t come here for a history lesson. Neither did I. But a little context helps, so don’t click away just yet. You hear me?
 
 Anyway, in today’s digital world, automation means using technology to handle repetitive tasks—automatically. Instead of manually sending emails, moving files, or copying data, software does it for you.
 
@@ -29,13 +29,13 @@ Why does automation matter? Because doing the same boring tasks over and over su
 
 See? That wasn’t so bad.
 
-Now, how can *you* start thinking about automation—whether in your daily routine, your job, or even your own business?
+Now, how can *you* start thinking about automation. Whether in your daily routine, your job, or even your own business?
 
 ### Step 1: Identify repetitive tasks
 
 Start by noticing what you do over and over again. Do you copy/paste data between apps? Keep retyping the same thing into a spreadsheet? That’s your automation opportunity.
 
-If you find yourself saying, “Not this again,” congrats—you’ve found something you can probably automate.
+If you find yourself saying, “Not this again,” congrats, you’ve found something you can probably automate.
 
 ### Step 2: Ask, “Can a program do this for me?”
 
@@ -49,7 +49,7 @@ You write a small script (a simple bit of code) to repeat the task for you. For 
 
 ### A Simple Analogy
 
-Let’s say I’m a baker. Every day I make cakes, but they all start the same way—get the ingredients, mix, bake, cool, etc. It’s repetitive.
+Let’s say I’m a baker. Every day I make cakes, but they all start the same way: get the ingredients, mix, bake, cool, etc. It’s repetitive.
 
 So I hire a machinist to build a robot to handle that base process. Now I can jump straight to the fun part: decorating cakes.
 
@@ -59,7 +59,7 @@ If the order sheet is clean and well-structured (like data from an **API**), eas
 
 But if the orders are written messily by hand (like **web scraping** messy websites), the machinist has to teach the robot to recognize patterns in all that chaos.
 
-And if someone changes how they write the orders? The robot breaks. That’s the downside of automation—your process is only as good as the data it depends on.
+And if someone changes how they write the orders? The robot breaks. That’s the downside of automation. Your process is only as good as the data it depends on.
 
 ---
 
@@ -91,7 +91,7 @@ Both required scripting—usually in Python or PowerShell. And no, you don’t n
 
 As mentioned earlier, this section is about APIs and web scraping.
 
-Starting with APIs—what are they?
+Starting with APIs. What are they?
 
 The acronym stands for **Application Programming Interface**, and the idea behind APIs is that they give programmers and scripters a clean, consistent way to interact with software.
 
@@ -101,9 +101,9 @@ APIs are one of my favorite things about automation because of how powerful and 
 
 Hell, even the Windows operating system has an API for developers (and malware devs) to interact with. But I digress.
 
-The key thing to remember is this: APIs don’t just let you **get** data—they also let you **send** data.
+The key thing to remember is this: APIs don’t just let you **get** data they also let you **send** data.
 
-If you’re following where this is going, you’ll realize you can automate far more than just reading information—you can automate entire actions by pushing data back to the system.
+If you’re following where this is going, you’ll realize you can automate far more than just reading information. You can automate entire actions by pushing data back to the system.
 
 From there, the sky's the limit.
 
@@ -122,7 +122,7 @@ Sometimes, you won’t have a nice API to work with. During my internship, I did
 
 Instead, I had to read **raw HTML** from websites and transform it into structured data.
 
-But be clear—the data you're looking for usually won’t be in the static source page when you right-click and "View Source."
+But be clear. The data you're looking for usually won’t be in the static source page when you right-click and "View Source."
 
 No, the real gold is in the **web requests** your browser sends to the server when you interact with a site.
 
@@ -134,9 +134,9 @@ When I started thinking about automating my job search after my internship, I no
 
 So I opened **Inspect Element** in Firefox, clicked the button that loads the next page of job listings, and watched the **Network tab**.
 
-There, I could see the requests my browser was sending to the LinkedIn servers. I found the specific one that fetched the next page of results—and guess what? I could replicate that request myself and get the same data.
+There, I could see the requests my browser was sending to the LinkedIn servers. I found the specific one that fetched the next page of results and guess what? I could replicate that request myself and get the same data.
 
-From there, I studied the request and figured out how my browser was sending it—what headers, parameters, and cookies it used. Then I realized it was just hitting a particular endpoint.
+From there, I studied the request and figured out how my browser was sending it. What headers, parameters, and cookies it used. Then I realized it was just hitting a particular endpoint.
 
 All I had to do was:
 
@@ -151,9 +151,9 @@ It’s about understanding how your browser is interacting with a site, mimickin
 
 ---
 
-Between the two, I prefer **APIs**—they're cleaner, more stable, and meant to be used. But if a vendor doesn’t provide one, then you have to make do and scrape.
+Between the two, I prefer **APIs**. They're cleaner, more stable, and meant to be used. But if a vendor doesn’t provide one, then you have to make do and scrape.
 
-That’s just how it is. That’s life—sometimes you just have to make do with what you’ve got.
+That’s just how it is. That’s life. Sometimes you just have to make do with what you’ve got.
 
 
 ---
@@ -166,7 +166,7 @@ Now that you know what APIs and web scraping are, the question becomes:
 
 Most vendors provide APIs. These are easier to work with because the data is already structured. But sometimes, if an API isn’t available (or access is limited), you have to resort to web scraping.
 
-In my internship, I ended up using an unofficial method. I didn’t have an API key—but I *did* have my cookie value. Not ideal, but it worked. Sometimes in automation, you’ve gotta do what works—within reason and policy, of course.
+In my internship, I ended up using an unofficial method. I didn’t have an API key but I *did* have my cookie value. Not ideal, but it worked. Sometimes in automation, you’ve gotta do what works—within reason and policy, of course.
 
 ---
 
