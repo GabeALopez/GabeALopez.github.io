@@ -114,7 +114,7 @@ type: "post"
 
 ## Reversing
 
-**Rule of Thumb:** Does the code look wonky decompiled? Try a decompiler that is specific to that coding language. You'll probably get better results
+**Rule of Thumb:** Does the code look wonky decompiled initially? Try a decompiler that is specific to that coding language. You'll probably get better results
 
 ## Forensics
 
@@ -130,3 +130,120 @@ type: "post"
 [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/#toc)
 
 **Description:** The good to for learning how to automate digital workflows for beginners. It teaches the important stuff of python to get you started.
+
+# Job Finding
+
+## Job Strategy
+
+Before getting into the job hunting strategies below, I want to share a quick perspective that helped me stay grounded during the process.
+
+According to statistics, it usually takes around 100 job applications to land a position. That roughly equals about three months of consistent searching and applying, depending on your background and the job market.
+
+The key thing to remember is this: if you keep applying, eventually an opportunity will come. One of humanity's oldest and most powerful traits is perseverance. Going back to ancient times, humans were able to hunt not because we were the strongest, but because we kept going until our prey gave up and and succumbed to our sticks and stones. That persistence helped us survive.
+
+In a similar way, job hunting works the same. The cycle of applying for jobs will be so worn out from you applying that it just gives up and gives you something. It's just that annoyed. It may sound strange, but it is something worth thinking about.
+
+**BIG DISCLAIMER:** None of this info is a guarantee for a position and I recognize some of it may seem a hokey but take what I have written what you will.
+
+Below is the formatted notes. If you are interested in the raw unorganized notes here you go:
+
+[Raw Job Notes]({{< relref "./raw-cybersecurity-markdown-notes/raw-job-notes.md" >}})
+
+### Job Description Evaluation
+--------------------------
+
+When to Apply:
+- Apply if job is labeled:
+  - “Entry-Level”
+  - “Associate”
+  - “New Grad”
+  - Mentions 5 or fewer years of experience
+- Don’t apply for now if:
+  - No experience level is listed
+  - No years of experience are mentioned
+    (May change later as you get better at interpreting job requirements)
+
+Company Size Consideration:
+- Big Companies often have new grad roles → Apply
+- Small-Medium Companies may not label as such →
+  Apply anyway if you can show ability to learn fast
+
+Job Description Red Flags:
+- Too much is asked?
+  → Could be a recruiter being unrealistic or a company asking too much
+- Look for keywords indicating level:
+  - entry-level
+  - new grad
+  - associate
+- Look for keywords indicating type of role:
+  - information technology analyst
+  - cybersecurity analyst
+  - information security analyst
+  - security analyst
+
+Contract Roles:
+- Usually want someone who can start immediately
+- Often looking for mid-level laid-off professionals
+- May not be suitable for entry-level, but use judgment
+
+
+### Application Timing
+------------------
+
+- Apply early in the morning or late at night
+- Apply Friday evening – large influx of applications
+- Apply early in general, even if it says “< 50 applicants”
+- Look for postings that have been posted in the last week and if they meet criteria apply for it.
+
+
+### Reposted Jobs
+-------------
+
+- Apply if reposted by large companies (e.g. ReliaQuest, Lockheed, L3Harris, Deloitte)
+  - Rule of thumb: if the company has about 10000 or more employees and in tech or MSP, it’s worth it
+- Don’t apply if reposted by medium or small companies
+
+
+### Security Clearance
+------------------
+
+- Look for roles that sponsor clearance
+- If role requires active clearance, consider applying based on description fit
+
+
+### Ghost Jobs
+----------
+
+- Pay attention to frequent reposting
+- Consider the type of company:
+  - MSP (Managed Service Provider)? → Always hiring → Still apply
+  - Manufacturing or similar? → Likely ghost job → Avoid
+
+
+### Internships
+-----------
+
+- Apply to all internships regardless of company size
+
+
+### Job Boards & Resources
+----------------------
+
+- newgrad-job.com
+- New-Grad-Positions GitHub
+
+
+### Application Strategy
+--------------------
+
+- If you meet ⅔ of the combined qualifications (minimum, preferred, and job duties) → Apply
+  - Focus most on minimum qualifications
+  - Even if you're 50/50, still try
+- If something strongly matches your interests → Tailor your resume
+  - Identify common themes
+  - Create a general resume
+  - Maintain flexibility:
+    Have a general resume ready, customize when necessary
+
+
+## Job Posting Locations
