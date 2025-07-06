@@ -4,11 +4,28 @@ title: "Resources"
 description: "This is a collection resources I have for varying things in cybersecurity"
 tags: ["Cybersecurity", "resources"]
 type: "post"
+showTableOfContents: true
 ---
 
 # Red Team
 
 ## Pentesting
+
+[Hacktricks](https://book.hacktricks.wiki/en/index.html)
+
+**Description:** A nice collection of methodologies for pentesting all kinds of things
+
+[VAPI](https://github.com/roottusk/vapi)
+
+**Description:** A repo that has a broken application for API testing from the OWASP Top 10. May be outdated though.
+
+[Google Dorks Github](https://github.com/TakSec/google-dorks-bug-bounty)
+
+**Description:** A list of google dorks to use for recon in bug bounty
+
+[Bug Bounty Tools List](https://github.com/vavkamil/awesome-bugbounty-tools)
+
+**Description:** List of tools that can be used for varying things in bug bounty
 
 ## Malware Development
 
@@ -116,7 +133,21 @@ type: "post"
 
 **Rule of Thumb:** Does the code look wonky decompiled initially? Try a decompiler that is specific to that coding language. You'll probably get better results
 
+### Tools
+
+- General Reversing
+  - Ghidra
+  - Cutter RE
+  - Radare
+  - IDA Free
+- Mobile
+  - Jadix
+
 ## Forensics
+
+[Digital Forensics Lab](https://github.com/frankwxu/digital-forensics-lab)
+
+**Description:** This is a old lab to learn digital forensics but I think it is still useful
 
 ### Tools
 
@@ -247,3 +278,24 @@ Contract Roles:
 
 
 ## Job Posting Locations
+
+[Job Search Terms Github](https://github.com/harisqazi1/Cybersecurity)
+
+**Description:** This isn't a place that has job posting but it is a repo to look out for certain keywords in your searches
+
+[Job Search Repo - "security-jobs"](https://github.com/sakshisangamwar/security-jobs)
+
+**Description:** This is a repo where two contributors put down job postings they have found in relation to internships and general security jobs
+
+[Job Search Repo - "2025-CyberSecurity-Internships"](https://github.com/WiCySRice/2025-CyberSecurity-Internships)
+
+**Description:** Another repo where people post jobs. Hasn't been updates in a bit but the idea of finding these repos is there
+
+[Job Search Repo - "New-Grad-2025"](https://github.com/vanshb03/New-Grad-2025)
+
+**Description:** This is another repo where jobs are posted but this one gets updated more often
+
+[Job Search Repo - "New-Grad-Positions"](New-Grad-Positions)
+
+**Description:** Yet another repo that gets job postings. This one gets updates fairly quickly as well
+
