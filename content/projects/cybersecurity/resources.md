@@ -27,6 +27,14 @@ showTableOfContents: true
 
 **Description:** List of tools that can be used for varying things in bug bounty
 
+[IppSec's Website](https://ippsec.rocks/?#)
+
+**Description:** This is IppSec's website that you can use to triage through his videos. If you have a keyword to look into, let's say how to use netexec, it will triage the descriptions of his videos to find what you are looking for.
+
+[IppSec's Youtube Channel](https://www.youtube.com/channel/UCa6eh7gCkpPo5XXUDfygQQA)
+
+**Description:** This is IppSec's Youtube channel where he does a lot HTB machines. Pretty nice resource for these boxes.
+
 ## Malware Development
 
 ### **General**
