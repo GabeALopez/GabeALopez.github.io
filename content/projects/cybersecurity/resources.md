@@ -35,9 +35,24 @@ showTableOfContents: true
 
 **Description:** This is IppSec's Youtube channel where he does a lot HTB machines. Pretty nice resource for these boxes.
 
+[Malware Dev Academy](https://maldevacademy.com/)
+
+**Description:** This is an interesting site for learning malware. Now I'm not saying to buy this. No, what I am saying to look at the syllabus that is posted on the site and start looking into the different techniques mentioned. A wealth of ideas
+
+[Offensive Nim](https://github.com/byt3bl33d3r/OffensiveNim?tab=readme-ov-file#why-nim)
+
+**Description:** Now this is an interesting repo for weaponizing a new coding language to create malware with
+
 ## Malware Development
 
 ### **General**
+
+```
+"malware dropper"
+"malware loader"
+"initial access techniques"
+```
+**Description:** Google searches that can be used to find info about malware droppers
 
 [Evading Antivirus Detection in C (with Dahvid Schloss) - John Hammond](https://youtu.be/izf8ptPVh2g?si=w5uVqyza3E678Csp)
 
@@ -70,6 +85,10 @@ showTableOfContents: true
 [Win32 API Documentation](https://learn.microsoft.com/en-us/windows/win32/api/)
 
 **Description:** The good old documentation on how to use the Win32 API (Application Programming Interface). Want to make malware? Know how to read this and know what info you want from it. 
+
+[Black Hat Zig](https://black-hat-zig.cx330.tw/#intro)
+
+**Description:** Interesting project regarding making malware with zig 
 
 ### Topics to Think About
 
