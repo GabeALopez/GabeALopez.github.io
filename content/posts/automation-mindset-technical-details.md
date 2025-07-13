@@ -2,7 +2,7 @@
 date: 2025-07-05
 # description: ""
 # image: ""
-lastmod: 2025-07-05
+lastmod: 2025-07-12
 showTableOfContents: false
 tags: ["Cybersecurity", "Automation"]
 title: "Automation Mindset - Technical Details"
@@ -126,9 +126,82 @@ But I prefer just taking the first few rows and looking at how the data is prese
 
 With that out of the way, it's now really time to talk about the code. 
 
-Which I'll come back to when I finish writing up this post.
+With the code itself there are two main pieces of code that I wrote up. One that handled the creation of a markdown file and one that handled getting the information from the Defender API.
 
----
+These are create_template_with_API.py and account_info.py respectively
+
+If you would like to see the raw code here is the [Link](/projects/cybersecurity/raw-cybersecurity-markdown-notes/raw-risky-user-code)
+
+Going foreword I am going to do an overview with each function as it will take a long time to go over each line.
+
+But I'm going to start off with the account_info.py script and start with the "start" function:
+
+```python
+# Main function that starts the process, takes account UPN and a threading lock as parameters
+def start(account_upn_param, lock: Lock) -> str:
+
+    # Read the authorization cookie from a template file
+    with open("template_authorization.txt", 'r') as file:
+        file_content = file.read() 
+
+    auth_cookie = file_content
+
+    # Line numbers for reading different URLs (incident and query)
+    incident_line = 1
+    query_line = 2
+
+    # Get the incident and query URLs from a predefined list of URLs
+    incident_url = read_urls(incident_line)
+    query_url = read_urls(query_line)
+
+    # Assign the input account UPN parameter to a local variable
+    account_upn = account_upn_param 
+
+    # BUG: Edge case where there are no identity logon events but there are entries in AADSignInEventsBeta
+    # Construct the user info query to fetch the user's creation date and last password change timestamp
+    user_info_query = (
+        f"let created_date_time = IdentityInfo | where AccountUpn contains '{account_upn}' "
+        "| project CreatedDateTime, AccountUpn;"
+        "AADSignInEventsBeta | join kind=innerunique created_date_time on AccountUpn"
+        "| take 1 | project CreatedDateTime, LastPasswordChangeTimestamp"
+    )
+    
+    # Query to get the account display name, sorted by the most recent generation time
+    account_display_name_query = (
+        f"IdentityInfo | where AccountUpn contains '{account_upn}' "
+        "| sort by TimeGenerated desc | take 1 | project AccountDisplayName"
+    )
+    
+    # Construct query objects for API requests
+    query = {
+        "Query": f"{user_info_query}"
+    }
+    display_name_query = {
+        "Query": f"{account_display_name_query}"
+    }
+
+    # Make API requests to fetch incident details and user-related data
+    first_activity, incident_id = incident_info_api_request(incident_url, auth_cookie, account_upn, lock)
+    created_data_time, last_pass_change_time = query_api_request(query_url, auth_cookie, query, lock)
+    
+    # Check if the account is an employee account
+    is_employee = is_employee_account(account_upn)
+    
+    # Fetch the account display name using a separate API request
+    account_display_name = display_name_api_request(query_url, auth_cookie, display_name_query, lock)
+
+    # Return all collected data
+    return created_data_time, incident_id, first_activity, \
+        last_pass_change_time, is_employee, account_display_name
+```
+
+The main overview of this function is that it is the main function for this program that controls the whole code. 
+
+Furthermore, this code handles setting up the all the queries that are going to be fed into other functions and fired off to the API.
+
+Additionally, the main function will read designated urls (i.e. Defender API url, query API url, etc) from a text file and use them in making requests to the Defender API.
+
+Once the queries and getting the urls are set up, this data is then passed into the varying functions. 
 
 ---
 
