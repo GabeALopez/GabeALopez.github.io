@@ -90,6 +90,10 @@ showTableOfContents: true
 
 **Description:** Interesting project regarding making malware with zig 
 
+[r/Malware](https://www.reddit.com/r/Malware/)
+
+**Description:** Reddit to follow what people are saying about malware.
+
 ### Topics to Think About
 
 - DNS Queries
