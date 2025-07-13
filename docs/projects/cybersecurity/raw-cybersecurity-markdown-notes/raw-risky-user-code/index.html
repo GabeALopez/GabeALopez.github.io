@@ -1,0 +1,365 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{--accent-color:#FF4D4D}</style><title>Raw Risky User Code</title><meta name=description content="This page includes the raw code I used for automating risky users"><meta name=keywords content="blog,gokarna,hugo,Cybersecurity,resources,raw notes"><meta property="og:url" content="https://gabealopez.github.io/projects/cybersecurity/raw-cybersecurity-markdown-notes/raw-risky-user-code/"><meta property="og:type" content="website"><meta property="og:title" content="Raw Risky User Code"><meta property="og:description" content="This page includes the raw code I used for automating risky users"><meta property="og:image" content="https://gabealopez.github.io/cyberduck"><meta property="og:image:secure_url" content="https://gabealopez.github.io/cyberduck"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Raw Risky User Code"><meta name=twitter:description content="This page includes the raw code I used for automating risky users"><meta property="twitter:domain" content="https://gabealopez.github.io/projects/cybersecurity/raw-cybersecurity-markdown-notes/raw-risky-user-code/"><meta property="twitter:url" content="https://gabealopez.github.io/projects/cybersecurity/raw-cybersecurity-markdown-notes/raw-risky-user-code/"><meta name=twitter:image content="https://gabealopez.github.io/cyberduck"><link rel=canonical href=https://gabealopez.github.io/projects/cybersecurity/raw-cybersecurity-markdown-notes/raw-risky-user-code/><link rel=stylesheet type=text/css href=/css/normalize.min.css media=print><link rel=stylesheet type=text/css href=/css/main.min.css><link id=dark-theme rel=stylesheet href=/css/dark.min.css><script src=/js/bundle.min.05408f4b6e97f753bafd29ac283c6886192dc1e928f4ae7468522f6796a0f2a1.js integrity="sha256-BUCPS26X91O6/SmsKDxohhktweko9K50aFIvZ5ag8qE="></script>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css integrity=sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js integrity=sha384-X/XCfMm41VSsqRNQgDerQczD69XqmjOOOwYQvr/uuC+j4OPoNhVgjdGFwhvN02Ja crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
+<script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}],throwOnError:!1})})</script></head><body><script>setThemeByUserPref()</script><header class=header><nav class=header-nav><div class=avatar><a href=https://gabealopez.github.io/><img src=/cyberduck alt=avatar></a></div><div class=nav-title><a class=nav-brand href=https://gabealopez.github.io/>Gabriel Lopez</a></div><div class=nav-links><div class=nav-link><a href=https://gabealopez.github.io/ aria-label><span data-feather=home></span> Home</a></div><div class=nav-link><a href=https://gabealopez.github.io/posts/ aria-label><span data-feather=book></span> Posts</a></div><div class=nav-link><a href=https://gabealopez.github.io/projects/ aria-label><span data-feather=code></span> Projects</a></div><div class=nav-link><a href=https://gabealopez.github.io/tags/ aria-label><span data-feather=tag></span> Tags</a></div><div class=nav-link><a href=https://github.com/GabeALopez aria-label=github><span data-feather=github></span></a></div><div class=nav-link><a href=https://gabealopez.github.io/index.xml aria-label=rss><span data-feather=rss></span></a></div><span class=nav-icons-divider></span><div class="nav-link dark-theme-toggle"><span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+<a aria-hidden=true role=switch><span class=theme-toggle-icon data-feather=moon></span></a></div><div class=nav-link id=hamburger-menu-toggle><span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
+<a aria-checked=false aria-labelledby=hamburger-menu-toggle id=hamburger-menu-toggle-target role=switch><span data-feather=menu></span></a></div><ul class="nav-hamburger-list visibility-hidden"><li class=nav-item><a href=https://gabealopez.github.io/><span data-feather=home></span> Home</a></li><li class=nav-item><a href=https://gabealopez.github.io/posts/><span data-feather=book></span> Posts</a></li><li class=nav-item><a href=https://gabealopez.github.io/projects/><span data-feather=code></span> Projects</a></li><li class=nav-item><a href=https://gabealopez.github.io/tags/><span data-feather=tag></span> Tags</a></li><li class=nav-item><a href=https://github.com/GabeALopez><span data-feather=github></span></a></li><li class=nav-item><a href=https://gabealopez.github.io/index.xml><span data-feather=rss></span></a></li><li class="nav-item dark-theme-toggle"><span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+<a role=switch><span class=theme-toggle-icon data-feather=moon></span></a></li></ul></div></nav></header><main id=content><div class="post container"><div class=post-header-section><h1>Raw Risky User Code</h1><small role=doc-subtitle>This page includes the raw code I used for automating risky users</small><p class=post-date>2025-07-12</p><ul class=post-tags><li class=post-tag><a href=https://gabealopez.github.io/tags/cybersecurity>Cybersecurity</a></li><li class=post-tag><a href=https://gabealopez.github.io/tags/resources>resources</a></li><li class=post-tag><a href=https://gabealopez.github.io/tags/raw-notes>raw notes</a></li></ul></div><div class=post-content><h1 id=account_infopy>account_info.py</h1><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>import</span> requests
+</span></span><span style=display:flex><span><span style=color:#f92672>import</span> urllib.error
+</span></span><span style=display:flex><span><span style=color:#f92672>import</span> urllib.request
+</span></span><span style=display:flex><span><span style=color:#f92672>import</span> json
+</span></span><span style=display:flex><span><span style=color:#f92672>import</span> sys
+</span></span><span style=display:flex><span><span style=color:#f92672>from</span> threading <span style=color:#f92672>import</span> Lock
+</span></span><span style=display:flex><span><span style=color:#f92672>from</span> urllib.parse <span style=color:#f92672>import</span> quote
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#e6db74>&#34;&#34;&#34;
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>Version 1.0
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>&#34;&#34;&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#TODO: Grab risky users from entra id (Overall)</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#TODO: [] risky detection timestamp</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Get display name from account API request</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>display_name_api_request</span>(url_param, cookie, query_param, lock: Lock) <span style=color:#f92672>-&gt;</span> str:
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>try</span>:
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>with</span> lock:
+</span></span><span style=display:flex><span>            print(<span style=color:#e6db74>&#34;</span><span style=color:#ae81ff>\r</span><span style=color:#e6db74>Querying User Display Name...&#34;</span>)
+</span></span><span style=display:flex><span>            sys<span style=color:#f92672>.</span>stdout<span style=color:#f92672>.</span>flush()
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        <span style=color:#75715e># Convert query parameters to JSON payload</span>
+</span></span><span style=display:flex><span>        json_payload <span style=color:#f92672>=</span> json<span style=color:#f92672>.</span>dumps(query_param)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        <span style=color:#75715e># Set headers</span>
+</span></span><span style=display:flex><span>        headers <span style=color:#f92672>=</span> {
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;Authorization&#34;</span>: cookie,
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;Content-Type&#34;</span>: <span style=color:#e6db74>&#34;application/json&#34;</span>
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        <span style=color:#75715e># Send request and handle response</span>
+</span></span><span style=display:flex><span>        response <span style=color:#f92672>=</span> requests<span style=color:#f92672>.</span>post(url_param, data<span style=color:#f92672>=</span>json_payload, headers<span style=color:#f92672>=</span>headers)
+</span></span><span style=display:flex><span>        response<span style=color:#f92672>.</span>raise_for_status()  <span style=color:#75715e># Raise an exception for HTTP errors</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        <span style=color:#75715e># Process response</span>
+</span></span><span style=display:flex><span>        json_response <span style=color:#f92672>=</span> response<span style=color:#f92672>.</span>json()
+</span></span><span style=display:flex><span>        results <span style=color:#f92672>=</span> json_response<span style=color:#f92672>.</span>get(<span style=color:#e6db74>&#39;Results&#39;</span>, [])
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>if</span> results:
+</span></span><span style=display:flex><span>            account_display_name <span style=color:#f92672>=</span> results[<span style=color:#ae81ff>0</span>]<span style=color:#f92672>.</span>get(<span style=color:#e6db74>&#39;AccountDisplayName&#39;</span>, <span style=color:#e6db74>&#39;Unknown&#39;</span>)
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>with</span> lock:
+</span></span><span style=display:flex><span>                print(<span style=color:#e6db74>&#34;</span><span style=color:#ae81ff>\r</span><span style=color:#e6db74>KQL Web Request Done!&#34;</span>)
+</span></span><span style=display:flex><span>                sys<span style=color:#f92672>.</span>stdout<span style=color:#f92672>.</span>flush()
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>return</span> account_display_name
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>else</span>:
+</span></span><span style=display:flex><span>            print(<span style=color:#e6db74>&#34;No results found in the response.&#34;</span>)
+</span></span><span style=display:flex><span>            sys<span style=color:#f92672>.</span>stdout<span style=color:#f92672>.</span>flush()
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>None</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>except</span> requests<span style=color:#f92672>.</span>exceptions<span style=color:#f92672>.</span>RequestException <span style=color:#66d9ef>as</span> e:
+</span></span><span style=display:flex><span>        print(<span style=color:#e6db74>&#34;Request Error:&#34;</span>, e)
+</span></span><span style=display:flex><span>        sys<span style=color:#f92672>.</span>stdout<span style=color:#f92672>.</span>flush()
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>None</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Function to make a query API request</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>query_api_request</span>(url_param, cookie, query_param, lock: Lock) <span style=color:#f92672>-&gt;</span> str:
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>try</span>:
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>with</span> lock:
+</span></span><span style=display:flex><span>            print(<span style=color:#e6db74>&#34;</span><span style=color:#ae81ff>\r</span><span style=color:#e6db74>Querying...&#34;</span>)
+</span></span><span style=display:flex><span>            sys<span style=color:#f92672>.</span>stdout<span style=color:#f92672>.</span>flush()
+</span></span><span style=display:flex><span>        
+</span></span><span style=display:flex><span>        <span style=color:#75715e># Convert query parameters to JSON payload</span>
+</span></span><span style=display:flex><span>        json_payload <span style=color:#f92672>=</span> json<span style=color:#f92672>.</span>dumps(query_param)<span style=color:#f92672>.</span>encode(<span style=color:#e6db74>&#39;utf-8&#39;</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        <span style=color:#75715e># Create request object</span>
+</span></span><span style=display:flex><span>        req <span style=color:#f92672>=</span> urllib<span style=color:#f92672>.</span>request<span style=color:#f92672>.</span>Request(url_param, data<span style=color:#f92672>=</span>json_payload, method<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;POST&#39;</span>)
+</span></span><span style=display:flex><span>        req<span style=color:#f92672>.</span>add_header(<span style=color:#e6db74>&#34;Authorization&#34;</span>, cookie)
+</span></span><span style=display:flex><span>        req<span style=color:#f92672>.</span>add_header(<span style=color:#e6db74>&#34;Content-Type&#34;</span>, <span style=color:#e6db74>&#34;application/json&#34;</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        <span style=color:#75715e># Send request and handle response</span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>with</span> urllib<span style=color:#f92672>.</span>request<span style=color:#f92672>.</span>urlopen(req) <span style=color:#66d9ef>as</span> response:
+</span></span><span style=display:flex><span>            response_data <span style=color:#f92672>=</span> response<span style=color:#f92672>.</span>read()
+</span></span><span style=display:flex><span>            json_response <span style=color:#f92672>=</span> json<span style=color:#f92672>.</span>loads(response_data<span style=color:#f92672>.</span>decode(<span style=color:#e6db74>&#39;utf-8&#39;</span>))
+</span></span><span style=display:flex><span>            results <span style=color:#f92672>=</span> json_response[<span style=color:#e6db74>&#39;Results&#39;</span>][<span style=color:#ae81ff>0</span>] 
+</span></span><span style=display:flex><span>            
+</span></span><span style=display:flex><span>            created_data_time <span style=color:#f92672>=</span> results<span style=color:#f92672>.</span>get(<span style=color:#e6db74>&#39;CreatedDateTime&#39;</span>)
+</span></span><span style=display:flex><span>            last_pass_change_time <span style=color:#f92672>=</span> results<span style=color:#f92672>.</span>get(<span style=color:#e6db74>&#39;LastPasswordChangeTimestamp&#39;</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>with</span> lock:
+</span></span><span style=display:flex><span>            print(<span style=color:#e6db74>&#34;</span><span style=color:#ae81ff>\r</span><span style=color:#e6db74>KQL Web Request Done!&#34;</span>)
+</span></span><span style=display:flex><span>            sys<span style=color:#f92672>.</span>stdout<span style=color:#f92672>.</span>flush()
+</span></span><span style=display:flex><span>        
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>return</span> created_data_time, last_pass_change_time
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>except</span> urllib<span style=color:#f92672>.</span>error<span style=color:#f92672>.</span>URLError <span style=color:#66d9ef>as</span> e:
+</span></span><span style=display:flex><span>        print(<span style=color:#e6db74>&#34;Error:&#34;</span>, e)
+</span></span><span style=display:flex><span>        sys<span style=color:#f92672>.</span>stdout<span style=color:#f92672>.</span>flush()
+</span></span><span style=display:flex><span>        exit()
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Function to make an incident info API request</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>incident_info_api_request</span>(url_param, cookie, user_principal_name_param, lock: Lock) <span style=color:#f92672>-&gt;</span> str:
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>try</span>:
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>with</span> lock:
+</span></span><span style=display:flex><span>            print(<span style=color:#e6db74>&#34;</span><span style=color:#ae81ff>\r</span><span style=color:#e6db74>Getting Incident Info...&#34;</span>)
+</span></span><span style=display:flex><span>            sys<span style=color:#f92672>.</span>stdout<span style=color:#f92672>.</span>flush()
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        <span style=color:#75715e># Ensure the URL is properly encoded</span>
+</span></span><span style=display:flex><span>        encoded_url <span style=color:#f92672>=</span> quote(url_param, safe<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;:/?&amp;=&#39;</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        headers <span style=color:#f92672>=</span> {<span style=color:#e6db74>&#34;Authorization&#34;</span>: cookie<span style=color:#f92672>.</span>encode(<span style=color:#e6db74>&#39;utf-8&#39;</span>)}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        <span style=color:#75715e># Send request and handle response</span>
+</span></span><span style=display:flex><span>        response <span style=color:#f92672>=</span> requests<span style=color:#f92672>.</span>get(encoded_url, headers<span style=color:#f92672>=</span>headers)
+</span></span><span style=display:flex><span>        response<span style=color:#f92672>.</span>raise_for_status()  <span style=color:#75715e># Raise an error for bad status codes</span>
+</span></span><span style=display:flex><span>        json_response <span style=color:#f92672>=</span> response<span style=color:#f92672>.</span>json()
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        incident_id <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;&#34;</span>
+</span></span><span style=display:flex><span>        first_activity <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        <span style=color:#75715e># Extract relevant incident information</span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>for</span> incident <span style=color:#f92672>in</span> json_response<span style=color:#f92672>.</span>get(<span style=color:#e6db74>&#39;value&#39;</span>, []):
+</span></span><span style=display:flex><span>            alerts <span style=color:#f92672>=</span> incident<span style=color:#f92672>.</span>get(<span style=color:#e6db74>&#39;alerts&#39;</span>, [])
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>if</span> <span style=color:#f92672>not</span> alerts:
+</span></span><span style=display:flex><span>                <span style=color:#66d9ef>continue</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>            entities <span style=color:#f92672>=</span> alerts[<span style=color:#ae81ff>0</span>]<span style=color:#f92672>.</span>get(<span style=color:#e6db74>&#39;entities&#39;</span>, [])
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>if</span> <span style=color:#f92672>not</span> entities:
+</span></span><span style=display:flex><span>                <span style=color:#66d9ef>continue</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>            user_principal_name <span style=color:#f92672>=</span> entities[<span style=color:#ae81ff>0</span>]<span style=color:#f92672>.</span>get(<span style=color:#e6db74>&#39;userPrincipalName&#39;</span>, <span style=color:#e6db74>&#39;&#39;</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>if</span> user_principal_name <span style=color:#f92672>!=</span> user_principal_name_param:
+</span></span><span style=display:flex><span>                <span style=color:#66d9ef>continue</span>
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>else</span>:
+</span></span><span style=display:flex><span>                first_activity <span style=color:#f92672>=</span> alerts[<span style=color:#ae81ff>0</span>]<span style=color:#f92672>.</span>get(<span style=color:#e6db74>&#39;firstActivity&#39;</span>, <span style=color:#e6db74>&#39;&#39;</span>)
+</span></span><span style=display:flex><span>                incident_id <span style=color:#f92672>=</span> incident<span style=color:#f92672>.</span>get(<span style=color:#e6db74>&#39;incidentId&#39;</span>, <span style=color:#e6db74>&#39;&#39;</span>)
+</span></span><span style=display:flex><span>                <span style=color:#66d9ef>break</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>with</span> lock:
+</span></span><span style=display:flex><span>            <span style=color:#75715e># Ensure proper encoding for console output</span>
+</span></span><span style=display:flex><span>            print(<span style=color:#e6db74>&#34;</span><span style=color:#ae81ff>\r</span><span style=color:#e6db74>Incident Web Request Done!&#34;</span><span style=color:#f92672>.</span>encode(sys<span style=color:#f92672>.</span>stdout<span style=color:#f92672>.</span>encoding, errors<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;replace&#39;</span>)<span style=color:#f92672>.</span>decode(sys<span style=color:#f92672>.</span>stdout<span style=color:#f92672>.</span>encoding))
+</span></span><span style=display:flex><span>            sys<span style=color:#f92672>.</span>stdout<span style=color:#f92672>.</span>flush()
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>if</span> incident_id:
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>return</span> first_activity, incident_id
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>else</span>:
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>return</span> <span style=color:#e6db74>&#34;N/A&#34;</span>, <span style=color:#e6db74>&#34;N/A&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>except</span> requests<span style=color:#f92672>.</span>RequestException <span style=color:#66d9ef>as</span> e:
+</span></span><span style=display:flex><span>        print(<span style=color:#e6db74>&#34;Error:&#34;</span>, e)
+</span></span><span style=display:flex><span>        exit()
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Function to check if an account is an employee account</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>is_employee_account</span>(UPN_param) <span style=color:#f92672>-&gt;</span> bool:
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> <span style=color:#f92672>not</span> any(char<span style=color:#f92672>.</span>isdigit() <span style=color:#66d9ef>for</span> char <span style=color:#f92672>in</span> UPN_param)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>read_urls</span>(line) <span style=color:#f92672>-&gt;</span> str:
+</span></span><span style=display:flex><span>    <span style=color:#75715e># Open the file in read mode</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>with</span> open(<span style=color:#e6db74>&#39;template_urls.txt&#39;</span>, <span style=color:#e6db74>&#39;r&#39;</span>, encoding<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;utf-8&#39;</span>) <span style=color:#66d9ef>as</span> file:
+</span></span><span style=display:flex><span>        <span style=color:#75715e># Read all lines into a list</span>
+</span></span><span style=display:flex><span>        lines <span style=color:#f92672>=</span> file<span style=color:#f92672>.</span>readlines()
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e># Check if the specified line number is valid</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> <span style=color:#ae81ff>1</span> <span style=color:#f92672>&lt;=</span> line <span style=color:#f92672>&lt;=</span> len(lines):
+</span></span><span style=display:flex><span>        <span style=color:#75715e># Get the URL from the chosen line</span>
+</span></span><span style=display:flex><span>        url <span style=color:#f92672>=</span> lines[line <span style=color:#f92672>-</span> <span style=color:#ae81ff>1</span>]<span style=color:#f92672>.</span>strip()  <span style=color:#75715e># Adjust index for 0-based indexing</span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>return</span> url
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>else</span>:
+</span></span><span style=display:flex><span>        print(<span style=color:#e6db74>&#34;Invalid line number.&#34;</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Main function that starts the process, takes account UPN and a threading lock as parameters</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>start</span>(account_upn_param, lock: Lock) <span style=color:#f92672>-&gt;</span> str:
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e># Read the authorization cookie from a template file</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>with</span> open(<span style=color:#e6db74>&#34;template_authorization.txt&#34;</span>, <span style=color:#e6db74>&#39;r&#39;</span>) <span style=color:#66d9ef>as</span> file:
+</span></span><span style=display:flex><span>        file_content <span style=color:#f92672>=</span> file<span style=color:#f92672>.</span>read() 
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    auth_cookie <span style=color:#f92672>=</span> file_content
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e># Line numbers for reading different URLs (incident and query)</span>
+</span></span><span style=display:flex><span>    incident_line <span style=color:#f92672>=</span> <span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span>    query_line <span style=color:#f92672>=</span> <span style=color:#ae81ff>2</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e># Get the incident and query URLs from a predefined list of URLs</span>
+</span></span><span style=display:flex><span>    incident_url <span style=color:#f92672>=</span> read_urls(incident_line)
+</span></span><span style=display:flex><span>    query_url <span style=color:#f92672>=</span> read_urls(query_line)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e># Assign the input account UPN parameter to a local variable</span>
+</span></span><span style=display:flex><span>    account_upn <span style=color:#f92672>=</span> account_upn_param 
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e># BUG: Edge case where there are no identity logon events but there are entries in AADSignInEventsBeta</span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e># Construct the user info query to fetch the user&#39;s creation date and last password change timestamp</span>
+</span></span><span style=display:flex><span>    user_info_query <span style=color:#f92672>=</span> (
+</span></span><span style=display:flex><span>        <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;let created_date_time = IdentityInfo | where AccountUpn contains &#39;</span><span style=color:#e6db74>{</span>account_upn<span style=color:#e6db74>}</span><span style=color:#e6db74>&#39; &#34;</span>
+</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#34;| project CreatedDateTime, AccountUpn;&#34;</span>
+</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#34;AADSignInEventsBeta | join kind=innerunique created_date_time on AccountUpn&#34;</span>
+</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#34;| take 1 | project CreatedDateTime, LastPasswordChangeTimestamp&#34;</span>
+</span></span><span style=display:flex><span>    )
+</span></span><span style=display:flex><span>    
+</span></span><span style=display:flex><span>    <span style=color:#75715e># Query to get the account display name, sorted by the most recent generation time</span>
+</span></span><span style=display:flex><span>    account_display_name_query <span style=color:#f92672>=</span> (
+</span></span><span style=display:flex><span>        <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;IdentityInfo | where AccountUpn contains &#39;</span><span style=color:#e6db74>{</span>account_upn<span style=color:#e6db74>}</span><span style=color:#e6db74>&#39; &#34;</span>
+</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#34;| sort by TimeGenerated desc | take 1 | project AccountDisplayName&#34;</span>
+</span></span><span style=display:flex><span>    )
+</span></span><span style=display:flex><span>    
+</span></span><span style=display:flex><span>    <span style=color:#75715e># Construct query objects for API requests</span>
+</span></span><span style=display:flex><span>    query <span style=color:#f92672>=</span> {
+</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#34;Query&#34;</span>: <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;</span><span style=color:#e6db74>{</span>user_info_query<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    display_name_query <span style=color:#f92672>=</span> {
+</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#34;Query&#34;</span>: <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;</span><span style=color:#e6db74>{</span>account_display_name_query<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e># Make API requests to fetch incident details and user-related data</span>
+</span></span><span style=display:flex><span>    first_activity, incident_id <span style=color:#f92672>=</span> incident_info_api_request(incident_url, auth_cookie, account_upn, lock)
+</span></span><span style=display:flex><span>    created_data_time, last_pass_change_time <span style=color:#f92672>=</span> query_api_request(query_url, auth_cookie, query, lock)
+</span></span><span style=display:flex><span>    
+</span></span><span style=display:flex><span>    <span style=color:#75715e># Check if the account is an employee account</span>
+</span></span><span style=display:flex><span>    is_employee <span style=color:#f92672>=</span> is_employee_account(account_upn)
+</span></span><span style=display:flex><span>    
+</span></span><span style=display:flex><span>    <span style=color:#75715e># Fetch the account display name using a separate API request</span>
+</span></span><span style=display:flex><span>    account_display_name <span style=color:#f92672>=</span> display_name_api_request(query_url, auth_cookie, display_name_query, lock)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e># Return all collected data</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> created_data_time, incident_id, first_activity, \
+</span></span><span style=display:flex><span>        last_pass_change_time, is_employee, account_display_name
+</span></span></code></pre></div><h1 id=create_template_with_apipy>create_template_with_API.py</h1><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>import</span> shutil
+</span></span><span style=display:flex><span><span style=color:#f92672>import</span> account_info
+</span></span><span style=display:flex><span><span style=color:#f92672>import</span> itertools
+</span></span><span style=display:flex><span><span style=color:#f92672>import</span> threading
+</span></span><span style=display:flex><span><span style=color:#f92672>import</span> time
+</span></span><span style=display:flex><span><span style=color:#f92672>import</span> sys
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#e6db74>&#34;&#34;&#34;
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>Version 1.0
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>&#34;&#34;&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Function to get user input</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>get_risky_user</span>(display_name):
+</span></span><span style=display:flex><span>    risky_user <span style=color:#f92672>=</span> display_name
+</span></span><span style=display:flex><span>    user_parts <span style=color:#f92672>=</span> []
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> <span style=color:#e6db74>&#39;,&#39;</span> <span style=color:#f92672>in</span> risky_user:
+</span></span><span style=display:flex><span>        user_parts <span style=color:#f92672>=</span> risky_user<span style=color:#f92672>.</span>split(<span style=color:#e6db74>&#39;,&#39;</span>)
+</span></span><span style=display:flex><span>        risky_user <span style=color:#f92672>=</span> user_parts[<span style=color:#ae81ff>1</span>]<span style=color:#f92672>.</span>strip() <span style=color:#f92672>+</span> <span style=color:#e6db74>&#34;_&#34;</span> <span style=color:#f92672>+</span> user_parts[<span style=color:#ae81ff>0</span>]<span style=color:#f92672>.</span>strip()
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>else</span>:
+</span></span><span style=display:flex><span>        risky_user <span style=color:#f92672>=</span> risky_user<span style=color:#f92672>.</span>replace(<span style=color:#e6db74>&#39;_&#39;</span>, <span style=color:#e6db74>&#39; &#39;</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> risky_user
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Function to create a new markdown file and write headers</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>create_markdown_file</span>(risky_user):
+</span></span><span style=display:flex><span>    document_title <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;Risky_User-&#34;</span> <span style=color:#f92672>+</span> risky_user
+</span></span><span style=display:flex><span>    shutil<span style=color:#f92672>.</span>copy(<span style=color:#e6db74>&#34;Risky_User_MarkdownTemplate.md&#34;</span>, <span style=color:#e6db74>&#34;workInProgressUsers</span><span style=color:#ae81ff>\\</span><span style=color:#e6db74>&#34;</span> <span style=color:#f92672>+</span> document_title <span style=color:#f92672>+</span> <span style=color:#e6db74>&#34;.md&#34;</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    file_header <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;**&#34;</span> <span style=color:#f92672>+</span> document_title <span style=color:#f92672>+</span> <span style=color:#e6db74>&#34;**&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>with</span> open(<span style=color:#e6db74>&#34;workInProgressUsers</span><span style=color:#ae81ff>\\</span><span style=color:#e6db74>&#34;</span> <span style=color:#f92672>+</span> document_title <span style=color:#f92672>+</span> <span style=color:#e6db74>&#34;.md&#34;</span>, <span style=color:#e6db74>&#39;r+&#39;</span>) <span style=color:#66d9ef>as</span> file:
+</span></span><span style=display:flex><span>        <span style=color:#75715e># Read the contents of the file</span>
+</span></span><span style=display:flex><span>        file_contents <span style=color:#f92672>=</span> file<span style=color:#f92672>.</span>read()
+</span></span><span style=display:flex><span>        
+</span></span><span style=display:flex><span>        <span style=color:#75715e># Move cursor to the beginning of the file</span>
+</span></span><span style=display:flex><span>        file<span style=color:#f92672>.</span>seek(<span style=color:#ae81ff>0</span>)
+</span></span><span style=display:flex><span>        
+</span></span><span style=display:flex><span>        <span style=color:#75715e># Write the header at the top of the file</span>
+</span></span><span style=display:flex><span>        file<span style=color:#f92672>.</span>write(file_header <span style=color:#f92672>+</span> <span style=color:#e6db74>&#39;</span><span style=color:#ae81ff>\n\n</span><span style=color:#e6db74>&#39;</span>)
+</span></span><span style=display:flex><span>        file<span style=color:#f92672>.</span>write(<span style=color:#e6db74>&#34;**Risky User - &#34;</span> <span style=color:#f92672>+</span> risky_user<span style=color:#f92672>.</span>replace(<span style=color:#e6db74>&#34;_&#34;</span>, <span style=color:#e6db74>&#34; &#34;</span>) <span style=color:#f92672>+</span> <span style=color:#e6db74>&#34;**&#34;</span> <span style=color:#f92672>+</span> <span style=color:#e6db74>&#39;</span><span style=color:#ae81ff>\n\n</span><span style=color:#e6db74>&#39;</span>)
+</span></span><span style=display:flex><span>        
+</span></span><span style=display:flex><span>        <span style=color:#75715e># Write back the existing contents after the header</span>
+</span></span><span style=display:flex><span>        file<span style=color:#f92672>.</span>write(file_contents)
+</span></span><span style=display:flex><span>        file<span style=color:#f92672>.</span>truncate()  <span style=color:#75715e># Truncate any remaining content if the new content is shorter</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Function to insert information after specific headers</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>insert_information</span>(document_title, info_dict):
+</span></span><span style=display:flex><span>    file_path <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;workInProgressUsers</span><span style=color:#ae81ff>\\</span><span style=color:#e6db74>&#34;</span> <span style=color:#f92672>+</span> document_title <span style=color:#f92672>+</span> <span style=color:#e6db74>&#34;.md&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e># Read the file contents</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>with</span> open(file_path, <span style=color:#e6db74>&#39;r&#39;</span>) <span style=color:#66d9ef>as</span> file:
+</span></span><span style=display:flex><span>        lines <span style=color:#f92672>=</span> file<span style=color:#f92672>.</span>readlines()
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e># List of headers to search for</span>
+</span></span><span style=display:flex><span>    headers <span style=color:#f92672>=</span> [
+</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#34;- Account Created:&#34;</span>,
+</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#34;- Is Employee?:&#34;</span>,
+</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#34;- Associated Defender Incident num:&#34;</span>,
+</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#34;- Associated Defender Incident Timestamp:&#34;</span>,
+</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#34;- Timestamp of risky detection:&#34;</span>,
+</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#34;- Last Password Change:&#34;</span>
+</span></span><span style=display:flex><span>    ]
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e># Insert information after each header</span>
+</span></span><span style=display:flex><span>    new_lines <span style=color:#f92672>=</span> []
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>for</span> line <span style=color:#f92672>in</span> lines:
+</span></span><span style=display:flex><span>        line_modified <span style=color:#f92672>=</span> <span style=color:#66d9ef>False</span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>for</span> header <span style=color:#f92672>in</span> headers:
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>if</span> line<span style=color:#f92672>.</span>startswith(header):
+</span></span><span style=display:flex><span>                new_line <span style=color:#f92672>=</span> line<span style=color:#f92672>.</span>strip() <span style=color:#f92672>+</span> <span style=color:#e6db74>&#34; &#34;</span> <span style=color:#f92672>+</span> info_dict<span style=color:#f92672>.</span>get(header, <span style=color:#e6db74>&#34;Information not provided&#34;</span>) <span style=color:#f92672>+</span> <span style=color:#e6db74>&#39;</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>&#39;</span>
+</span></span><span style=display:flex><span>                new_lines<span style=color:#f92672>.</span>append(new_line)
+</span></span><span style=display:flex><span>                line_modified <span style=color:#f92672>=</span> <span style=color:#66d9ef>True</span>
+</span></span><span style=display:flex><span>                <span style=color:#66d9ef>break</span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>if</span> <span style=color:#f92672>not</span> line_modified:
+</span></span><span style=display:flex><span>            new_lines<span style=color:#f92672>.</span>append(line)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e># Write the modified content back to the file</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>with</span> open(file_path, <span style=color:#e6db74>&#39;w&#39;</span>) <span style=color:#66d9ef>as</span> file:
+</span></span><span style=display:flex><span>        file<span style=color:#f92672>.</span>writelines(new_lines)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>done <span style=color:#f92672>=</span> <span style=color:#66d9ef>False</span>
+</span></span><span style=display:flex><span>lock <span style=color:#f92672>=</span> threading<span style=color:#f92672>.</span>Lock()
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Here is the animation</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>animate</span>():
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>for</span> c <span style=color:#f92672>in</span> itertools<span style=color:#f92672>.</span>cycle([<span style=color:#e6db74>&#39;|&#39;</span>, <span style=color:#e6db74>&#39;/&#39;</span>, <span style=color:#e6db74>&#39;-&#39;</span>, <span style=color:#e6db74>&#39;</span><span style=color:#ae81ff>\\</span><span style=color:#e6db74>&#39;</span>]):
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>if</span> done:
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>break</span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>with</span> lock:
+</span></span><span style=display:flex><span>            sys<span style=color:#f92672>.</span>stdout<span style=color:#f92672>.</span>write(<span style=color:#e6db74>f</span><span style=color:#e6db74>&#39;</span><span style=color:#ae81ff>\r\033</span><span style=color:#e6db74>[Kloading </span><span style=color:#e6db74>{</span>c<span style=color:#e6db74>}</span><span style=color:#e6db74>&#39;</span>)  <span style=color:#75715e># Clear the line before printing the animation frame</span>
+</span></span><span style=display:flex><span>            sys<span style=color:#f92672>.</span>stdout<span style=color:#f92672>.</span>flush()
+</span></span><span style=display:flex><span>        time<span style=color:#f92672>.</span>sleep(<span style=color:#ae81ff>0.1</span>)
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>with</span> lock:
+</span></span><span style=display:flex><span>        sys<span style=color:#f92672>.</span>stdout<span style=color:#f92672>.</span>write(<span style=color:#e6db74>&#39;</span><span style=color:#ae81ff>\r\033</span><span style=color:#e6db74>[KTemplate Created!</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>&#39;</span>)  <span style=color:#75715e># Clear the line and print completion message</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Main script function to execute the process</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>main</span>():
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>global</span> done  <span style=color:#75715e># Declare &#39;done&#39; as a global variable to control the animation thread</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e># Prompt user to enter the account UPN (User Principal Name)</span>
+</span></span><span style=display:flex><span>    account_upn <span style=color:#f92672>=</span> input(<span style=color:#e6db74>&#34;Enter account UPN: &#34;</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e># Start a separate thread to run the animation function, indicating processing is ongoing</span>
+</span></span><span style=display:flex><span>    t <span style=color:#f92672>=</span> threading<span style=color:#f92672>.</span>Thread(target<span style=color:#f92672>=</span>animate)
+</span></span><span style=display:flex><span>    t<span style=color:#f92672>.</span>start()
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e># Call the start function from account_info module to get user and incident details</span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e># This function likely prints messages and takes a lock to ensure thread safety</span>
+</span></span><span style=display:flex><span>    created_date_time, incident_id, first_activity, \
+</span></span><span style=display:flex><span>        last_pass_change_time, is_employee, account_display_name <span style=color:#f92672>=</span> account_info<span style=color:#f92672>.</span>start(account_upn, lock)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e># Determine if the user is considered risky based on their account display name</span>
+</span></span><span style=display:flex><span>    risky_user <span style=color:#f92672>=</span> get_risky_user(account_display_name)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e># Create a Markdown file named after the risky user</span>
+</span></span><span style=display:flex><span>    create_markdown_file(risky_user)
+</span></span><span style=display:flex><span>    
+</span></span><span style=display:flex><span>    <span style=color:#75715e># Define the document title using the risky user&#39;s name</span>
+</span></span><span style=display:flex><span>    document_title <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;Risky_User-&#34;</span> <span style=color:#f92672>+</span> risky_user 
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e># Dictionary to store information that will be inserted after each header in the Markdown file</span>
+</span></span><span style=display:flex><span>    info_dict <span style=color:#f92672>=</span> {
+</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#34;- Account Created:&#34;</span>: <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;</span><span style=color:#e6db74>{</span>created_date_time<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>,
+</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#34;- Is Employee?:&#34;</span>: <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;</span><span style=color:#e6db74>{</span>is_employee<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>,
+</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#34;- Associated Defender Incident num:&#34;</span>: <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;</span><span style=color:#e6db74>{</span>incident_id<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>,
+</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#34;- Associated Defender Incident Timestamp:&#34;</span>: <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;</span><span style=color:#e6db74>{</span>first_activity<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>,
+</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#34;- Timestamp of risky detection:&#34;</span>: <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;notDoneYet&#34;</span>,  <span style=color:#75715e># Placeholder for future implementation</span>
+</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#34;- Last Password Change:&#34;</span>: <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;</span><span style=color:#e6db74>{</span>last_pass_change_time<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e># Insert the collected information into the Markdown document under relevant headers</span>
+</span></span><span style=display:flex><span>    insert_information(document_title, info_dict)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e># Set the &#39;done&#39; flag to True to signal the end of processing</span>
+</span></span><span style=display:flex><span>    done <span style=color:#f92672>=</span> <span style=color:#66d9ef>True</span>
+</span></span><span style=display:flex><span>    
+</span></span><span style=display:flex><span>    <span style=color:#75715e># Wait for the animation thread to finish before exiting the main function</span>
+</span></span><span style=display:flex><span>    t<span style=color:#f92672>.</span>join()
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>if</span> __name__ <span style=color:#f92672>==</span> <span style=color:#e6db74>&#34;__main__&#34;</span>:
+</span></span><span style=display:flex><span>    main()
+</span></span></code></pre></div></div><div class=prev-next></div><svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top"><path d="M177 159.7l136 136c9.4 9.4 9.4 24.6.0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9.0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9.0L7 329.7c-9.4-9.4-9.4-24.6.0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/></svg><script>let backToTopButton=document.getElementById("btt-button");window.onscroll=function(){scrollFunction()};function scrollFunction(){document.body.scrollTop>20||document.documentElement.scrollTop>20?backToTopButton.style.display="block":backToTopButton.style.display="none"}function scrollToTop(){window.scrollTo(0,0)}</script></div></main><footer class=footer><span>Made with &#10084;&#65039; using <a target=_blank href=https://github.com/gokarna-theme/gokarna-hugo>Gokarna</a></span></footer></body></html>
