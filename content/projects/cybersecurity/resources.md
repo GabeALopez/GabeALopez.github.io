@@ -35,14 +35,6 @@ showTableOfContents: true
 
 **Description:** This is IppSec's Youtube channel where he does a lot HTB machines. Pretty nice resource for these boxes.
 
-[Malware Dev Academy](https://maldevacademy.com/)
-
-**Description:** This is an interesting site for learning malware. Now I'm not saying to buy this. No, what I am saying to look at the syllabus that is posted on the site and start looking into the different techniques mentioned. A wealth of ideas
-
-[Offensive Nim](https://github.com/byt3bl33d3r/OffensiveNim?tab=readme-ov-file#why-nim)
-
-**Description:** Now this is an interesting repo for weaponizing a new coding language to create malware with
-
 ## Malware Development
 
 ### **General**
@@ -93,6 +85,14 @@ showTableOfContents: true
 [r/Malware](https://www.reddit.com/r/Malware/)
 
 **Description:** Reddit to follow what people are saying about malware.
+
+[Malware Dev Academy](https://maldevacademy.com/)
+
+**Description:** This is an interesting site for learning malware. Now I'm not saying to buy this. No, what I am saying to look at the syllabus that is posted on the site and start looking into the different techniques mentioned. A wealth of ideas
+
+[Offensive Nim](https://github.com/byt3bl33d3r/OffensiveNim?tab=readme-ov-file#why-nim)
+
+**Description:** Now this is an interesting repo for weaponizing a new coding language to create malware with
 
 ### Topics to Think About
 
