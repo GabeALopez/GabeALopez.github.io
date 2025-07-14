@@ -2,7 +2,7 @@
 date: 2025-07-05
 # description: ""
 # image: ""
-lastmod: 2025-07-12
+lastmod: 2025-07-13
 showTableOfContents: false
 tags: ["Cybersecurity", "Automation"]
 title: "Automation Mindset - Technical Details"
@@ -202,6 +202,116 @@ Furthermore, this code handles setting up the all the queries that are going to 
 Additionally, the main function will read designated urls (i.e. Defender API url, query API url, etc) from a text file and use them in making requests to the Defender API.
 
 Once the queries and getting the urls are set up, this data is then passed into the varying functions. 
+
+---
+
+Going down the lines in the start function, the first function we hit is the read_urls function:
+
+```python
+def read_urls(line) -> str:
+    # Open the file in read mode
+    with open('template_urls.txt', 'r', encoding='utf-8') as file:
+        # Read all lines into a list
+        lines = file.readlines()
+
+    # Check if the specified line number is valid
+    if 1 <= line <= len(lines):
+        # Get the URL from the chosen line
+        url = lines[line - 1].strip()  # Adjust index for 0-based indexing
+        return url
+    else:
+        print("Invalid line number.")
+```
+
+This function is straightforward as all it does is read the specific line that the function is supplied.
+
+So for instance, if I supply the function with the number 1 it will read the first line of the text document called "template_urls.txt"
+
+To be honest, this function could reworked to be a bit more pertinent to the entire code as everything for reading urls could have been self contained. 
+
+But it gets the job done and that's what matters here.
+
+Unless it is slow, then start caring :\)
+
+But overall, pretty simple function. Nothing crazy about it.
+
+---
+
+The next we going to look at is the "incident_info_api_request" function:
+
+```python
+# Function to make an incident info API request
+def incident_info_api_request(url_param, cookie, user_principal_name_param, lock: Lock) -> str:
+    try:
+        with lock:
+            print("\rGetting Incident Info...")
+            sys.stdout.flush()
+
+
+        # Ensure the URL is properly encoded
+        encoded_url = quote(url_param, safe=':/?&=')
+
+        headers = {"Authorization": cookie.encode('utf-8')}
+
+        # Send request and handle response
+        response = requests.get(encoded_url, headers=headers)
+        response.raise_for_status()  # Raise an error for bad status codes
+        json_response = response.json()
+
+        incident_id = ""
+        first_activity = ""
+
+        # Extract relevant incident information
+        for incident in json_response.get('value', []):
+            alerts = incident.get('alerts', [])
+            if not alerts:
+                continue
+
+            entities = alerts[0].get('entities', [])
+            if not entities:
+                continue
+
+            user_principal_name = entities[0].get('userPrincipalName', '')
+
+            if user_principal_name != user_principal_name_param:
+                continue
+            else:
+                first_activity = alerts[0].get('firstActivity', '')
+                incident_id = incident.get('incidentId', '')
+                break
+
+        with lock:
+            # Ensure proper encoding for console output
+            print("\rIncident Web Request Done!".encode(sys.stdout.encoding, errors='replace').decode(sys.stdout.encoding))
+            sys.stdout.flush()
+
+        if incident_id:
+            return first_activity, incident_id
+        else:
+            return "N/A", "N/A"
+    except requests.RequestException as e:
+        print("Error:", e)
+        exit()
+```
+
+This one is a big one, as it is trying to search for an associated incident ID and/or the latest timestamp of the risky user alert.
+
+First off the parameters that are being passed into this function are the incident url to the Defender API, the browser cookie, the account upn, and a lock.
+
+The lock is used here for the animation here. I created a little loading animation for when the script is running to give that extra pizazz.
+
+Now the next few lines mainly handle authorization where I assemble the request to the incident url with the browser cookie.
+
+Furthermore, I also assemble the payload with the user's upn to get results back for the user.
+
+Next, the for loop iterates through the json response to see if there is an incident ID associated with the user.
+
+If there isn't any, it will pass an empty string to the the two vars.
+
+Sometime Defender didn't have an incident ID associated with the user and often this would be the case.
+
+Once that's done, the function will return with the values back to the start function.
+
 
 ---
 
