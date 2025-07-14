@@ -2,10 +2,10 @@
 date: 2025-07-12
 # description: ""
 # image: ""
-lastmod: 2025-07-12
+lastmod: 2025-07-13
 showTableOfContents: false
 tags: ["Cybersecurity", "Malware"]
-title: "Heavens Gate"
+title: "Heavens Gate Technique"
 type: "post"
 ---
 
