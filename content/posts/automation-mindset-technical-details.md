@@ -2,7 +2,7 @@
 date: 2025-07-05
 # description: ""
 # image: ""
-lastmod: 2025-07-13
+lastmod: 2025-07-20
 showTableOfContents: false
 tags: ["Cybersecurity", "Automation"]
 title: "Automation Mindset - Technical Details"
@@ -312,6 +312,51 @@ Sometime Defender didn't have an incident ID associated with the user and often 
 
 Once that's done, the function will return with the values back to the start function.
 
+---
+
+```python
+# Function to make a query API request
+def query_api_request(url_param, cookie, query_param, lock: Lock) -> str:
+    try:
+        with lock:
+            print("\rQuerying...")
+            sys.stdout.flush()
+        
+        # Convert query parameters to JSON payload
+        json_payload = json.dumps(query_param).encode('utf-8')
+
+        # Create request object
+        req = urllib.request.Request(url_param, data=json_payload, method='POST')
+        req.add_header("Authorization", cookie)
+        req.add_header("Content-Type", "application/json")
+
+        # Send request and handle response
+        with urllib.request.urlopen(req) as response:
+            response_data = response.read()
+            json_response = json.loads(response_data.decode('utf-8'))
+            results = json_response['Results'][0] 
+            
+            created_data_time = results.get('CreatedDateTime')
+            last_pass_change_time = results.get('LastPasswordChangeTimestamp')
+
+        with lock:
+            print("\rKQL Web Request Done!")
+            sys.stdout.flush()
+        
+        return created_data_time, last_pass_change_time
+    except urllib.error.URLError as e:
+        print("Error:", e)
+        sys.stdout.flush()
+        exit()
+```
+
+The next function here handles sending out the KQL query to obtain when the user's account was created and the last time the user changed their password.
+
+The query starts with setting up the request to the right url and once the request is set up it is sent to the url
+
+Once the results come back, in json form, the function will then iterate through the json object to extract the important values
+
+After that, the functions with the specified values back to the start function.
 
 ---
 
